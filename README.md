@@ -31,8 +31,16 @@ Install dependencies
 Run it
 
 ```bash
-  python app.py
+  flask --app app run
 ```
+
+<br />
+
+Once the app is running, visit the testing server to see a live preview:
+
+[http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+<br />
 
 ## Potential Issues
 
