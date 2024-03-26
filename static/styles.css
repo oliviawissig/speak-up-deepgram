@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    font-size:1.6rem;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png");
+    background-repeat: repeat;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height:90vh;
+    width:40vw;
+    margin:auto;
+}
+
+input{
+    padding:8px;
+    border-radius:12px;
+}
+
+button{
+    padding:8px;
+    border-radius:12px;
+    border: 1px solid black;
+    font-size:1rem;
+}
+
+.content{
+    padding:20px;
+    background: white;
+    border:1px solid gray;
+    text-align: center;
+}
