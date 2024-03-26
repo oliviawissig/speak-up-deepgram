@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Speak Up!</title>
+		<link rel="stylesheet" href="../static/styles.css" />
+	</head>
+
+	<body>
+		<h1>Speak Up</h1>
+		<p>Hi! Welcome, if you use the field below this page will speak up!</p>
+
+		<form action="{{ url_for('speak')}}" method="post">
+			<input type="text" name="content" />
+			<button type="submit">Speak</button>
+		</form>
+
+		<p>You can use this section to hear the audio again:</p>
+		<audio controls>
+			<source src="/static/speakup_output.wav" type="audio/wav" />
+		</audio>
+	</body>
+</html>

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Speak Up!</title>
+		<link rel="stylesheet" href="../static/styles.css" />
+	</head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Speak Up!</title>
-  <link rel="stylesheet" href="../static/styles.css">
-</head>
+	<body>
+		<h1>Speak Up</h1>
+		<p>Hi! Welcome, if you use the field below this page will speak up!</p>
 
-<body>
-  <h1>Speak Up</h1>
-</body>
+		<form action="{{ url_for('speak')}}" method="post">
+			<input type="text" name="content" />
+			<button type="submit">Speak</button>
+		</form>
 
+		<p>Submit the form above to populate a WAV file.</p>
+	</body>
 </html>
