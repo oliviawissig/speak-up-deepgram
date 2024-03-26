@@ -34,3 +34,16 @@ Run it
   python app.py
 ```
 
+## Potential Issues
+
+If there is an error like this one
+
+```bash
+  FileNotFoundError: [Errno 2] No such file or directory: 'ffplay'
+```
+
+Install the following with Homebrew (More [here](https://github.com/kkroening/ffmpeg-python/issues/251))
+
+```bash
+  brew install ffmpeg
+```
